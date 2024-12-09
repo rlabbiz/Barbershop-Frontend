@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.App {
+  width: 900px;
+  padding: 50px;
+  background-color: rgb(42, 42, 42);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 10px;
+  border: 1px solid rgb(196, 164, 132);
+}
+
+.App h1 {
+  color: rgb(196, 164, 132);
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2.2em;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.App .select-date {
+  margin-bottom: 20px;
+}
+
+.App .select-date label {
+  color: rgb(196, 164, 132);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.App .select-date input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(196, 164, 132, 0.05);
+  border: 1px solid rgba(196, 164, 132, 0.2);
+  border-radius: 8px;
+  color: #E5E7EB;
+  font-size: 1em;
+  outline: none;
+  outline: none;
+}
+
+.App .select-date input::placeholder {
+  color: rgba(196, 164, 132, 0.5);
+}
+
+.App .select-time {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
+
+.App .select-time span {
+  font-weight: 500;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background: rgba(196, 164, 132, 0.05);
+  font-size: 0.9em;
+  color: #E5E7EB;
+}
+
+.App .select-time span:hover:not(.disabled) {
+  background: rgba(196, 164, 132, 0.1);
+  transform: scale(1.05);
+}
+
+.App .select-time span:not(.disabled) {
+  border: 1px solid rgb(196, 164, 132);
+}
+
+.App .select-time span.active {
+  background: rgb(196, 164, 132);
+  color: #E5E7EB;
+
+}
+
+.App .select-time span.disabled {
+  background: rgba(196, 164, 132, 0.05);
+  color: rgba(196, 164, 132, 0.5);
+  cursor: not-allowed;
+}
+
+.App .validation {
+  color: rgb(196, 164, 132);
+  font-size: 0.9em;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .validation input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(196, 164, 132, 0.05);
+  border: 1px solid rgba(196, 164, 132, 0.2);
+  border-radius: 8px;
+  color: #E5E7EB;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.App .validation label {
+  display: block;
+  margin-bottom: 8px;
+  color: #c4a484;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+
+}
+
+.App .validation input::placeholder {
+  color: rgba(196, 164, 132, 0.5);
+}
+
+.App .validation button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #c4a484, #a67b5b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+.App .validation button:hover {
+  transform: scale(1.01);
+}
